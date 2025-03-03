@@ -7,6 +7,11 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    margin: 10;
-    background-color: thistle;
+    margin: 0;
+    background-color: seashell;
+}
+
+.box {
+    background-color: MistyRose;
+    color: RosyBrown;
 }
