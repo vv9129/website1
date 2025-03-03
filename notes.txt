@@ -1,0 +1,29 @@
+
+if i want github to reflect my changes
+1. git add .
+2. git commit -m "some text"
+3. git push
+
+exclamation mark tab to make new html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Search<title>
+    <!-- <link rel="stylesheet" href="css/search.css"> -->
+</head>
+<body>
+    hello
+   <!-- <div class="search">
+        <input class ="input" type="text" placeholder = "Search...">
+        <button class ="btn">
+            <i class="fas fa-search"></i>
+        </button>
+   </div> -->
+   <!-- <script src="js/search.js"></script> -->
+   <!-- <script src="https://kit.fontawesome.com/c513779648.js" -->
+   crossorigin="anonymous"></script>
+</body>
+</html>
