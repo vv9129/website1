@@ -45,11 +45,20 @@ document.addEventListener('keyup', (event)=>{
     }
     element3.style.top = `${positionY}px`
     element3.style.left = `${positionX}px`
+
+    if (event.key == 'j') {
+        element4.style.width = "300px"
+        element4.style.height = "50px"
+        element4.innerHTML = "Click me to make me small <br> Press 'j' to brick me back."
+        element.style.opacity = 1
+    }
 })
 
-element4.addEventListener('click', ()=>) {
+element4.addEventListener('click', ()=>{
     element4.style.width = "10px"
     element4.style.height = "10px"
     element4.innerHTML = ""
     element.style.opacity = .3
-}
+})
+
+
