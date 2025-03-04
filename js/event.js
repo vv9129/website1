@@ -23,3 +23,9 @@ element2.addEventListener('mouseout', ()=>{
 })
 
 
+/*element to use when talking about the button, use document to talk about in general*/
+document.addEventListener('keyup', (event)=>{
+    console.log(event.key)
+})
+
+
