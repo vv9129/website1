@@ -1,6 +1,8 @@
 const element1 = document.getElementById('element1')
 const element2 = document.getElementById('element2')
 const element3 = document.getElementById('element3')
+const element4 = document.getElementById('element4')
+
 
 
 element1.addEventListener('click', ()=>{
@@ -45,4 +47,9 @@ document.addEventListener('keyup', (event)=>{
     element3.style.left = `${positionX}px`
 })
 
-
+element4.addEventListener('click', ()=>) {
+    element4.style.width = "10px"
+    element4.style.height = "10px"
+    element4.innerHTML = ""
+    element.style.opacity = .3
+}
