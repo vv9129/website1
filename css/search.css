@@ -15,6 +15,7 @@ body {
 .search {
     position: relative;
     height: 50px;
+    background-color: red;
 }
 
 .search .input{
