@@ -15,7 +15,6 @@ body {
 .search {
     position: relative;
     height: 50px;
-    background-color: red;
 }
 
 .search .input{
@@ -24,7 +23,7 @@ body {
     font-size: 18px;
     padding: 15px;
     border: 0;
-    background-color: red;
+    background-color: #CCCCFF;
     transition: width 1s ease;
 }
 
