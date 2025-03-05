@@ -38,20 +38,14 @@ document.addEventListener('keyup', (event)=>{
         positionY = positionY - 5
     }
     else if (event.key == 'ArrowLeft') {
-        positionX = positionX - 5
-    }
-    else if (event.key == 'ArrowRight') {
         positionX = positionX + 5
     }
-    element3.style.top = `${positionY}px`
-    element3.style.left = `${positionX}px`
-
-    if (event.key == 'j') {
-        element4.style.width = "300px"
-        element4.style.height = "50px"
-        element4.innerHTML = "Click me to make me small <br> Press 'j' to brick me back."
-        element.style.opacity = 1
+    else if (event.key == 'ArrowRight') {
+        positionX = positionX - 5
     }
+    element3.style.top = `${positionY}px`
+    element3.style.right = `${positionX}px`
+
 })
 
 element4.addEventListener('click', ()=>{
@@ -59,6 +53,23 @@ element4.addEventListener('click', ()=>{
     element4.style.height = "10px"
     element4.innerHTML = ""
     element.style.opacity = .3
+})
+
+document.addEventListener('keyup', (event)=>{
+    if (event.key == 'j') {
+        element4.style.width = "300px"
+        element4.style.height = "50px"
+        element4.innerHTML = "<h4>Click me to make me small <br> Press 'j' to brick me back.</h4>"
+        element.style.opacity = 1
+    }
+})
+
+
+const list = ['running', 'paused']
+let index = 0
+element5.addEventListener('click', ()=>{
+    element5.style.animationPlayState = list[index]
+    index = (index + 1) % 2
 })
 
 
