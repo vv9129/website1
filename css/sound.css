@@ -14,5 +14,9 @@ body {
 }
 
 .btn {
-    margin: 50;
+    height: 88vh;
+    margin: 10px;
+    border-radius: 50px;
+    flex: 1;
+    cursor: pointer;
 }
