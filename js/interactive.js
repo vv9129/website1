@@ -9,6 +9,6 @@ box.addEventListener('click', ()=> {
 
 })
 
-if (index = 5) {
+if (index == 5) {
     index = 0
 }
