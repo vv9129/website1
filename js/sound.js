@@ -11,3 +11,9 @@ sounds.forEach(sound => {
 
     document.getElementById('buttons').appendChild(btn)
 })
+
+function stopSongs(){
+    sounds.forEach(sound => {
+        document.getElementById(sound).pause()
+    })
+}
