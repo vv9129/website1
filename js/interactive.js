@@ -6,4 +6,9 @@ let index = 0
 box.addEventListener('click', ()=> {
     box.style.backgroundColor = colors[index]
     index = index + 1
+
 })
+
+if (index = 5) {
+    index = 0
+}
