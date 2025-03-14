@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
@@ -8,15 +11,29 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    margin: 0;
-
+    margin: 0px;
+    font-family: 'Playfair Display', sans-serif;
 
 }
 
 .btn {
-    height: 88vh;
+    background-color: #a8bb49 ;
+    height: 7vh;
     margin: 10px;
     border-radius: 50px;
     flex: 1;
     cursor: pointer;
+    color: white ;
+    font-size: 20px;
+    padding: 1px 30px;
+    border-color: #ffcd30;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:focus {
+    outline: none;
 }
