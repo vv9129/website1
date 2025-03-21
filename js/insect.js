@@ -52,6 +52,10 @@ function createInsect(){
     insect.style.top = `${y}px`
     insect.style.left = `${x}px`
     game_container.appendChild(insect)
+
+    insect.addEventListener('click', () => {
+        score = score + 1
+    })
 }
 
 
@@ -63,10 +67,4 @@ function getRandomLocation(){
     const x = Math.random() * width
     const y = Math.random() * height
     return {x,y}
-}
-
-function addScore(){
-    insects.addEventListener('click', () => {
-        score = score + 1
-    })
 }
