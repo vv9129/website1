@@ -8,7 +8,7 @@ const message = document.getElementById('message')
 
 let seconds = 0
 let score = 0
-let selected_insect =
+let selectedInsect = {}
 
 start_btn.addEventListener('click', () => {
     screens[0].classList.add('up')
@@ -61,6 +61,10 @@ function getRandomLocation(){
     const height = window.innerHeight
     console.log(Math.random())
     const x = Math.random() * width
-    cosnt y = Math.random() * height
+    const y = Math.random() * height
     return {x,y}
+}
+
+function addScore(){
+    
 }
