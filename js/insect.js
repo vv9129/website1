@@ -18,9 +18,9 @@ choose_insect_btns.forEach(btn => {
     btn.addEventListener('click', () => {
         screens[1].classList.add('up')
         const img = btn.querySelector('img')
-        const scr = img.getAttribute('src')
+        const src = img.getAttribute('src')
         const alt = img.getAttribute('alt')
-        selected_insect = {src, alt}
+        selectedInsect = {src, alt}
         startGame()
         createInsect()
     })
@@ -66,5 +66,7 @@ function getRandomLocation(){
 }
 
 function addScore(){
-    
+    insect.addEventListener('click', () => {
+        score = score + 1
+    })
 }
