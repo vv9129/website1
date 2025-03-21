@@ -50,6 +50,7 @@ function createInsect(){
     insect.innerHTML = `<img src="${selected_insect.src}" alt = "${selected_insect.alt}">`
     const [x,y] = getRandomLocation()
     insect.style.top = `${y}px`
+    insect.stle.left = `${x}px`
     game_container.appendChild(insect)
 }
 
