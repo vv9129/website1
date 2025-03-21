@@ -55,6 +55,7 @@ function createInsect(){
 
     insect.addEventListener('click', () => {
         score = score + 1
+        scoreEl.innerHTML = `Score: ${score}`
     })
 }
 
