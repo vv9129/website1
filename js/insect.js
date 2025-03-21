@@ -66,7 +66,7 @@ function getRandomLocation(){
 }
 
 function addScore(){
-    insect.addEventListener('click', () => {
+    insects.addEventListener('click', () => {
         score = score + 1
     })
 }
