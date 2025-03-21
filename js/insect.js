@@ -69,3 +69,5 @@ function getRandomLocation(){
     const y = Math.random() * height
     return {x,y}
 }
+
+
