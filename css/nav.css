@@ -30,6 +30,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav ul {
@@ -39,15 +40,24 @@ body {
     justify-content: center;
 }
 
-.nav li {
-    margin: 10px;
-}
-
 
 .nav a {
     color: #ffffff;
     padding: 7px 15px;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav .active {
+    background-color: white;
+}
+
+.nav .active a {
+    color: black;
+}
+
+.nav .active .container {
+    padding: 10px 0;
 }
 
 .hero {
