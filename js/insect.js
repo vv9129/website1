@@ -71,6 +71,9 @@ function addInsects(){
 function increaseScore(){
     score = score + 1
     scoreEl.innerHTML = `Score: ${score}`
+    if (score == 25){
+        message.classList.add('visible')
+    }
 }
 
 
@@ -81,5 +84,3 @@ function getRandomLocation(){
     const y = Math.random() * (height - 200) + 100
     return {x,y}
 }
-
-

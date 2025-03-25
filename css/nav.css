@@ -55,6 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
     margin-bottom: 20px;
     z-index: -2;
 }
@@ -92,5 +93,5 @@ body {
     color: rgb(55,55,55);
     line-height: 30px;
     letter-spacing: 1.2px;
-    
+
 }
