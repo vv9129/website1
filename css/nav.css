@@ -39,15 +39,12 @@ body {
     justify-content: center;
 }
 
-.nav ul li {
+.nav li {
     margin: 10px;
 }
 
-.nav ul a {
-    color: white;
-}
 
-.nav {
+.nav a {
     color: #ffffff;
     padding: 7px 15px;
     text-decoration: none;
