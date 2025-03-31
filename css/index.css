@@ -6,31 +6,41 @@
 }
 
 body {
-    background-color: white;
-    color: #ffa500;
+    background-color: #f2ebe9;
+    color: #264143;
     font-family: 'Gravistas One', sans-serif;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    margin: 10;
+    text-align: center;
 
 }
 
 .btn {
-    background-color: #ffa500;
+    background-color: #de5499;
     height: 7vh;
     margin: 10px;
     border-radius: 50px;
     flex: 1;
     cursor: pointer;
-    color: white;
+    color: #264143;
     font-size: 20px;
     padding: 1px 30px;
-    border-color: #ffcd30;
+    border-color: orange;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+h1 {
+    margin: auto;
+    color: #e99f4c;
+    text-align: center;
+    width: 100%;
+    border: 10px #de5499;
+    padding: 250px;
 }
 
