@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Emblema+One&family=Gravitas+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #ffa500;
+    font-family: 'Gravistas One', sans-serif;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.btn {
+    background-color: #ffa500;
+    height: 7vh;
+    margin: 10px;
+    border-radius: 50px;
+    flex: 1;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    padding: 1px 30px;
+    border-color: #ffcd30;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+

@@ -28,7 +28,7 @@ body {
 
 #element1 {
     position: absolute;
-    top: 15px;
+    top: 100px;
     left: 15px;
 }
 
@@ -40,7 +40,7 @@ body {
 
 #element3 {
     position: absolute;
-    top: 15px;
+    top: 100px;
     right: 15px;
 }
 
