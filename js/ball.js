@@ -28,6 +28,9 @@ let level = 1 // display level and increase level by 1 every 10 scores
 const scoreText = document.createElement('div')
 document.body.appendChild(scoreText)
 
+const levelText = document.createElement('div')
+document.body.appendChild(levelText)
+
 createBall()
 
 function moveBall(){
@@ -116,13 +119,17 @@ function animate(){
 
 animate()
 
+
 function createText(){
-    scoreText.innerHTML = Score: `${score}px`
+    scoreText.innerHTML = `Score: ${score}`
     scoreText.style.position = 'absolute'
     scoreText.style.top = '30px'
     scoreText.style.left = '50px'
     scoreText.style.color = 'black'
     scoreText.style.fontSize = '30px'
+
+    levelText.innerHTML = `Level: ${level}`
+    levelText.style.position = 'absolute'
 
 }
 
