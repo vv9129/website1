@@ -21,7 +21,6 @@ let LPaddleXPosition = 70
 
 
 createBall()
-setInterval(moveBall, 10)
 
 function moveBall(){
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
@@ -98,3 +97,12 @@ function moveLPaddle(){
     }
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
+
+function animate(){
+    moveBall()
+    moveLPaddle()
+    requestAnimationFrame(animate)
+
+}
+
+animate()
