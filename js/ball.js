@@ -4,22 +4,21 @@ const windowWidth = window.innerWidth
 
 const ball = document.createElement('div')
 document.body.appendChild(ball)
-const LPaddle = document.createElement('div')
-document.body.appendChild(LPaddle)
-let LPaddleWidth = 20
-let LPaddleHeight = 100
-let LPaddleSpeed = 20
-
-
 const ballRadius = 50
-
 let ballXPosition = windowWidth / 2 - ballRadius
 let ballYPosition = windowHeight / 2 - ballRadius
 let ballSpeed = 5
 let ballXDirection = 1
 let ballYDirection = 1
 
+const LPaddle = document.createElement('div')
+document.body.appendChild(LPaddle)
+let LPaddleWidth = 20
+let LPaddleHeight = 100
+let LPaddleSpeed = 20
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
+let LPaddleXPosition = 70
+
 
 createBall()
 setInterval(moveBall, 10)
