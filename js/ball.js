@@ -15,7 +15,7 @@ const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
 let LPaddleWidth = 20
 let LPaddleHeight = 100
-let LPaddleSpeed = 20
+let LPaddleSpeed = 10
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
 let LPaddleXPosition = 70
 
@@ -24,6 +24,8 @@ let level = 1 // display level and increase level by 1 every 10 scores
 // as level increase, increase ball speed
 // if ball gets past the paddle, end the game: ball can stop or disappear
 // optional: sound fx
+
+
 
 createBall()
 
@@ -80,7 +82,7 @@ document.addEventListener('keydown', (event)=> {
         console.log(wKey)
     }
     if (event.key == 's') {
-        wKey = true
+        sKey = true
     }
 })
 
@@ -90,7 +92,7 @@ document.addEventListener('keyup', (event) => {
         wKey = false
     }
     if (event.key == 's') {
-        wKey = false
+        sKey = false
     }
 })
 
