@@ -19,6 +19,9 @@ let LPaddleSpeed = 20
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
 let LPaddleXPosition = 70
 
+let score = 0 // Display score and increase score by 1 every time ball hits the paddle
+let level = 1 // display level and increase level by 1 every 10 scores
+// as level increase, increase ball speed
 
 createBall()
 
