@@ -117,12 +117,12 @@ function animate(){
 animate()
 
 function createText(){
-    scoreText.innerHTML = "Score: "
+    scoreText.innerHTML = Score: `${score}px`
     scoreText.style.position = 'absolute'
-    scoreText.style.top = '50px'
+    scoreText.style.top = '30px'
     scoreText.style.left = '50px'
     scoreText.style.color = 'black'
-    scoreText.style.fontsize = '20px'
+    scoreText.style.fontSize = '30px'
 
 }
 
