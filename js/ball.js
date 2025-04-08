@@ -26,6 +26,7 @@ let level = 1 // display level and increase level by 1 every 10 scores
 // optional: sound fx
 
 const scoreText = document.createElement('div')
+document.body.appendChild(scoreText)
 
 createBall()
 
@@ -121,6 +122,8 @@ function createText(){
     scoreText.style.top = '50px'
     scoreText.style.left = '50px'
     scoreText.style.color = 'black'
+    scoreText.style.fontsize = '20px'
+
 }
 
 createText()
