@@ -4,7 +4,7 @@ const windowWidth = window.innerWidth
 
 const ball = document.createElement('div')
 document.body.appendChild(ball)
-const ballRadius = 50
+const ballRadius = 40
 let ballXPosition = windowWidth / 2 - ballRadius
 let ballYPosition = windowHeight / 2 - ballRadius
 let ballSpeed = 5
@@ -34,7 +34,12 @@ function moveBall(){
     if (ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRadius) {
         ballXDirection = ballXDirection * -1
     }
-    //if (ball.style.top <= LPaddle.style.top && ball.style.bottom >= LPaddle.style.bottom && )
+    let ballTop = ballYPosition
+    let ballBottom = ballYPosition + 2 * ballRadius
+    let ballLeft = ballXPosition
+    let LPaddleTop = LPaddleYPosition
+    let LPaddleBottom = LPaddleYPosition + LPaddleHeight
+    let LPaddleRight = LPaddleXPosition + LPaddleWidth
 }
 
 
