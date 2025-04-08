@@ -25,7 +25,7 @@ let level = 1 // display level and increase level by 1 every 10 scores
 // if ball gets past the paddle, end the game: ball can stop or disappear
 // optional: sound fx
 
-
+const scoreText = document.createElement('div')
 
 createBall()
 
@@ -114,3 +114,13 @@ function animate(){
 }
 
 animate()
+
+function createText(){
+    scoreText.innerHTML = "Score: "
+    scoreText.style.position = 'absolute'
+    scoreText.style.top = '50px'
+    scoreText.style.left = '50px'
+    scoreText.style.color = 'black'
+}
+
+createText()
