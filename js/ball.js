@@ -22,6 +22,7 @@ let LPaddleXPosition = 70
 let score = 0 // Display score and increase score by 1 every time ball hits the paddle
 let level = 1 // display level and increase level by 1 every 10 scores
 // as level increase, increase ball speed
+// if ball gets past the paddle, end the game: ball can stop or disappear
 
 createBall()
 
