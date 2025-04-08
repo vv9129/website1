@@ -76,19 +76,21 @@ sKey = false
 
 document.addEventListener('keydown', (event)=> {
     if (event.key == 'w') {
-        wkey = true
+        wKey = true
+        console.log(wKey)
     }
     if (event.key == 's') {
-        wkey = true
+        wKey = true
     }
 })
 
 document.addEventListener('keyup', (event) => {
     if (event.key == 'w') {
-        wkey = false
+        console.log(wKey)
+        wKey = false
     }
     if (event.key == 's') {
-        wkey = false
+        wKey = false
     }
 })
 
