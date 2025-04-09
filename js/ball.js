@@ -53,6 +53,7 @@ function moveBall(){
 
     if((ballBottom >= LPaddleTop) && (ballTop <= LPaddleBottom) && (ballLeft <= LPaddleRight) && (ballXDirection == -1) ){
             ballXDirection = ballXDirection * -1
+            updateText()
         }
 }
 
@@ -61,7 +62,7 @@ function createBall(){
     ball.style.height = `${2*ballRadius}px`
     ball.style.width = `${2*ballRadius}px`
     ball.style.borderRadius = "50%"
-    ball.style.backgroundColor = "pink"
+    ball.style.backgroundColor = "#960058"
     ball.style.position = "absolute"
     ball.style.top = `${windowHeight/2 - ballRadius}px`
     ball.style.left = `${windowWidth/2 - ballRadius}px`
@@ -71,7 +72,7 @@ createLPaddle()
 function createLPaddle() {
     LPaddle.style.height = `${LPaddleHeight}px`
     LPaddle.style.width = `${LPaddleWidth}px`
-    LPaddle.style.backgroundColor = 'blue'
+    LPaddle.style.backgroundColor = '#8f9600'
     LPaddle.style.position = 'absolute'
     LPaddle.style.left = `${LPaddleXPosition}px`
     LPaddle.style.top = `${LPaddleYPosition}px`
@@ -121,16 +122,32 @@ animate()
 
 
 function createText(){
-    scoreText.innerHTML = `Score: ${score}`
+    scoreText.innerHTML = `SCORE: ${score}`
     scoreText.style.position = 'absolute'
     scoreText.style.top = '30px'
     scoreText.style.left = '50px'
     scoreText.style.color = 'black'
     scoreText.style.fontSize = '30px'
 
-    levelText.innerHTML = `Level: ${level}`
+    levelText.innerHTML = `LEVEL: ${level}`
     levelText.style.position = 'absolute'
+    levelText.style.top = '30px'
+    levelText.style.right = '50px'
+    levelText.style.fontSize = '30px'
+}
+
+function updateText(){
+    score = score + 1
+    scoreText.innerHTML = `SCORE: ${score}`
+
+    if (score % 10 == 0){
+        level = level + 1
+        levelText.innerHTML = `LEVEL: ${level}`
+        document.body.style.backgroundColor = '#ffe7c7'
+    }
 
 }
 
 createText()
+
+
