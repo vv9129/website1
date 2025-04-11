@@ -1,6 +1,28 @@
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 
+const start = document.createElement('div')
+document.body.appendChild(start)
+
+function starting(){
+    start.style.height = "30px"
+    start.style.width = "140px"
+    start.style.backgroundColor = "black"
+    start.style.borderRadius = "20%"
+
+    start.style.display = "flex"
+    start.style.justifyContent = "center"
+    start.style.alignItems = "center"
+
+    start.style.opacity = "0.8"
+    start.style.zIndex = '2'
+    start.innerHTML = `PLAY`
+    start.style.color = "white"
+    start.style.textAlign = "center"
+    start.style.padding = "70px"
+    start.style.fontSize = "70px"
+
+}
 
 const ball = document.createElement('div')
 document.body.appendChild(ball)
@@ -56,6 +78,16 @@ function moveBall(){
             updateText()
         }
 }
+
+function gameOver() {
+    ballSpeed = 0
+}
+
+if (ballXPosition < 0) {
+    gameOver()
+}
+
+
 
 
 function createBall(){
