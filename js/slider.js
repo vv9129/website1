@@ -11,6 +11,7 @@ upButton.addEventListener('click', () => changeSlide('up'))
 downButton.addEventListener('click', () => changeSlide('down'))
 
 function changeSlide(direction) {
+    console.log(currentSlide)
     if (direction == 'up'){
         if (currentSlide == slidesLength) {
             currentSlide = 0
@@ -19,7 +20,7 @@ function changeSlide(direction) {
     }
     else {
         currentSlide = currentSlide - 1
-        
+
         if (currentSlide == 0) {
             currentSlide == slidesLength
         }
