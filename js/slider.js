@@ -5,6 +5,7 @@ const leftSide = document.querySelector('.left-side')
 const slidesLength = rightSide.querySelectorAll('div').length
 
 let currentSlide = 1
+
 leftSide.style.top = `${-(slidesLength - currentSlide)*100}%`
 
 upButton.addEventListener('click', () => changeSlide('up'))
