@@ -21,7 +21,7 @@ function changeSlide(direction) {
     else {
         currentSlide = currentSlide - 1
 
-        if (currentSlide == 0) {
+        if (currentSlide < 0) {
             currentSlide == slidesLength
         }
     }
