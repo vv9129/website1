@@ -23,8 +23,8 @@ function changeSlide(direction) {
     else {
         currentSlide = currentSlide - 1
 
-        if (currentSlide 0) {
-            currentSlide == slidesLength
+        if (currentSlide == 0) {
+            currentSlide = slidesLength
         }
     }
     console.log(currentSlide)
